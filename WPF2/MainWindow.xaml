@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Height="40" Orientation="Horizontal" Background="LightBlue">
+        </StackPanel>
+        
+        <DockPanel DockPanel.Dock="Bottom" Height="30" LastChildFill="False" Background="Red">
+        </DockPanel>
+
+        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" Width="30" Background="Green">
+        </StackPanel>
+
+        <Grid Background="Black" DockPanel.Dock="Right" Width="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120*"/>
+                <RowDefinition Height="120*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid Background="Aqua">
+        </Grid>
+    </DockPanel>
+</Window>
